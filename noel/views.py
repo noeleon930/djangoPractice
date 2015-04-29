@@ -1,10 +1,12 @@
 from datetime import datetime
 from django.shortcuts import render
 from noel.models import Post
+import numberrr
 
 
 def hello_world(request):
-    return render(request, 'hello_world.html', {'current_time': datetime.now()})
+    a = numberrr.mulmul(10000)
+    return render(request, 'hello_world.html', {'current_time': datetime.now(), 'number': a})
 
 
 def home(request):
