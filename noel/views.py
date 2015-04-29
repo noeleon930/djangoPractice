@@ -5,7 +5,7 @@ import numberrr
 
 
 def hello_world(request):
-    a = numberrr.mulmul(10000)
+    a = numberrr.mulmul(1000000000)
     return render(request, 'hello_world.html', {'current_time': datetime.now(), 'number': a})
 
 
