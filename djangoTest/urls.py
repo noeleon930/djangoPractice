@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/$', 'noel.views.hello_world'),
     url(r'^hello2/$', 'noel2.views.hello_world'),
+    url(r'^helloUrl/(?P<name>.+)/', 'unicodeTest.views.helloUrl'),
     url(r'^$', 'noel.views.home'),
 ]
